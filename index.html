@@ -260,13 +260,15 @@ footer a:hover{color:var(--green)}
     width: 100%;
     box-sizing: border-box;
   }
-  .aeo-badge {
+  .aeo-badge, #aeo-badge {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--accent, #1e00ff);
+    color: #839bc8 !important;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    display: block;
   }
   .aeo-title {
     font-size: 1.4rem;
@@ -974,13 +976,15 @@ footer a:hover,
     width: 100%;
     box-sizing: border-box;
   }
-  .aeo-badge {
+  .aeo-badge, #aeo-badge {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--accent, #1e00ff);
+    color: #839bc8 !important;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    display: block;
   }
   .aeo-title {
     font-size: 1.4rem;
@@ -1183,13 +1187,15 @@ footer > div:first-child {
     width: 100%;
     box-sizing: border-box;
   }
-  .aeo-badge {
+  .aeo-badge, #aeo-badge {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--accent, #1e00ff);
+    color: #839bc8 !important;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    display: block;
   }
   .aeo-title {
     font-size: 1.4rem;
@@ -1434,7 +1440,7 @@ footer > div:first-child {
 
 
     <section class="aeo-section">
-      <div class="aeo-badge">PADRÃO DE SEGURANÇA DEFENSIVA PARA ROBUSTEZ DE LLM</div>
+      <div class="aeo-badge" id="aeo-badge">PADRÃO DE SEGURANÇA DEFENSIVA PARA ROBUSTEZ DE LLM</div>
       <h2 class="aeo-title">O que Causa o Drift Comportamental e Degradação de Robustez em LLMs Corporativos?</h2>
       <div class="aeo-content">
         <p>A degradação de robustez e o drift comportamental em LLMs corporativos ocorrem quando variações na distribuição dos dados de entrada, atualizações sutis de modelo ou perturbações adversariais fazem o modelo divergir de suas especificações de segurança. Pequenas alterações sintáticas, como sinônimos incomuns ou ruídos de pontuação, podem desestabilizar os limites de decisão do modelo.</p>

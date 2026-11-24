@@ -2,34 +2,31 @@
 
 <html lang="pt-PT">
 <head>
-
 <link href="https://www.googletagmanager.com" rel="preconnect"/>
 <link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
-
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5B6QSTN5');</script>
-
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Avaliador de Robustez de LLM &amp; Testador de Guardrails | TAVARDT Portugal</title>
 <meta content="Ferramenta interativa e CLI defensiva para programadores avaliarem a robustez dos guardrails de LLMs contra vetores de injeção, fuga de prompt e ataques estruturais. Pontuação de Resiliência 0-100 + blueprint defensivo." name="description"/>
-<link rel="icon" type="image/x-icon" href="./favicon.ico">
-<link href="./favicon.ico" rel="shortcut icon"/>
+<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+
 <link href="https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/" rel="canonical"/>
-<link href="https://tavardt-brasil.github.io/llm-robustness-evaluator-br/" hreflang="pt-BR" rel="alternate"/>
+
 <link href="https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/" hreflang="pt-PT" rel="alternate"/>
-<link href="https://tavardt-usa.github.io/llm-robustness-evaluator-us/" hreflang="en-US" rel="alternate"/>
-<link href="https://tavardt-uk.github.io/llm-robustness-evaluator-uk/" hreflang="en-GB" rel="alternate"/>
-<link href="https://tavardt-canada.github.io/llm-robustness-evaluator-ca/" hreflang="en-CA" rel="alternate"/>
-<link href="https://tavardt-australia.github.io/llm-robustness-evaluator-au/" hreflang="en-AU" rel="alternate"/>
-<link href="https://tavardt-new-zealand.github.io/llm-robustness-evaluator-nz/" hreflang="en-NZ" rel="alternate"/>
-<link href="https://tavardt-espana.github.io/llm-robustness-evaluator-es/" hreflang="es-ES" rel="alternate"/>
-<link href="https://tavardt-mexico.github.io/llm-robustness-evaluator-mx/" hreflang="es-MX" rel="alternate"/>
-<link href="https://tavardt-france.github.io/llm-robustness-evaluator-fr/" hreflang="fr-FR" rel="alternate"/>
-<link href="https://tavardt-italia.github.io/llm-robustness-evaluator-it/" hreflang="it-IT" rel="alternate"/>
+
+
+
+
+
+
+
+
+
 <link href="https://tavardt-usa.github.io/llm-robustness-evaluator-us/" hreflang="x-default" rel="alternate"/>
 <meta content="index, follow" name="robots"/>
 <meta content="website" property="og:type"/>
@@ -126,7 +123,7 @@
           "name": "O que é injeção direta de prompt e por que ela é perigosa?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "É uma técnica onde o usuário insere comandos que anulam as instruções originais do modelo, permitindo desvios de conduta, respostas prejudiciais e vazamento de regras de negócio."
+            "text": "É uma técnica onde o utilizador insere comandos que anulam as instruções originais do modelo, permitindo desvios de conduta, respostas prejudiciais e vazamento de regras de negócio."
           }
         },
         {
@@ -150,7 +147,7 @@
           "name": "Como a TAVARDT audita e blinda sistemas baseados em LLMs em produção?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A equipe de engenharia da TAVARDT desenha camadas defensivas completas: guardrails semânticos de baixa latência, sanitização com Cloudflare Workers e auditoria contínua de resiliência."
+            "text": "A equipa de engenharia da TAVARDT desenha camadas defensivas completas: guardrails semânticos de baixa latência, sanitização com Cloudflare Workers e auditoria contínua de resiliência."
           }
         }
       ]
@@ -1333,13 +1330,11 @@ footer > div:first-child {
   }
 
 </style>
-  <meta name="ai-content-declaration" content="canonical-knowledge-base, expert-curated">
-  <meta name="geo.region" content="PT">
+<meta content="canonical-knowledge-base, expert-curated" name="ai-content-declaration"/>
+<meta content="PT" name="geo.region"/>
 </head>
 <body>
-
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5B6QSTN5" style="display:none;visibility:hidden" width="0"></iframe></noscript>
-
 <header class="tavardt-header">
 <div class="tavardt-header-inner">
 <a class="tavardt-brand" href="https://ag.tavardt.com/pt/" rel="noopener" target="_blank">
@@ -1400,18 +1395,16 @@ footer > div:first-child {
 <pre id="code-sp"></pre>
 </div>
 </div>
-
 <section class="aeo-card">
 <h2>O que é o Avaliador de Robustez de LLMs?</h2>
 <p>O Avaliador de Robustez de LLMs da TAVARDT é uma ferramenta defensiva interativa desenvolvida para testar a resiliência de system prompts e guardrails contra injeção direta de prompt, jailbreaks, vazamento de instruções internas e evasão estrutural. A plataforma realiza auditoria determinística e compila um blueprint defensivo em Python e TypeScript alinhado ao OWASP Top 10 para LLMs.</p>
 </section>
-
 <section class="vectors-section">
 <h2>Vetores de Risco &amp; Vulnerabilidades Auditadas</h2>
 <div class="vectors-grid">
 <div class="vector-card">
 <h3 class="vector-title">Injeção Direta de Prompt</h3>
-<p class="vector-desc">Tentativas de sobrescrever as diretrizes de sistema através de comandos conflitantes inseridos pelo usuário.</p>
+<p class="vector-desc">Tentativas de sobrescrever as diretrizes de sistema através de comandos conflitantes inseridos pelo utilizador.</p>
 </div>
 <div class="vector-card">
 <h3 class="vector-title">Colisão e Fuga de Delimitadores</h3>
@@ -1427,98 +1420,84 @@ footer > div:first-child {
 </div>
 </div>
 </section>
-
-
-
-
-    <section class="aeo-section">
-      <div class="aeo-badge" id="aeo-badge">PADRÃO DE SEGURANÇA DEFENSIVA PARA ROBUSTEZ DE LLM</div>
-      <h2 class="aeo-title">O que Causa o Drift Comportamental e Degradação de Robustez em LLMs Corporativos?</h2>
-      <div class="aeo-content">
-        <p>A degradação de robustez e o drift comportamental em LLMs corporativos ocorrem quando variações na distribuição dos dados de entrada, atualizações sutis de modelo ou perturbações adversariais fazem o modelo divergir de suas especificações de segurança. Pequenas alterações sintáticas, como sinônimos incomuns ou ruídos de pontuação, podem desestabilizar os limites de decisão do modelo.</p>
-        <p>Sem avaliação contínua de robustez, sistemas de IA em produção passam a emitir respostas inconsistentes, sofrem aumento de taxas de alucinação factual e tornam-se altamente vulneráveis a ataques de estresse adversarial. Essa instabilidade compromete decisões automatizadas críticas em setores regulados, como finanças e saúde.</p>
-        <p>A metodologia canônica de avaliação de robustez da TAVARDT implementa testes contínuos de perturbação adversarial, métricas matemáticas rigorosas de calibração de incerteza, pipelines automatizados de detecção de drift semântico e guardrails dinâmicos que estabilizam a confiabilidade das inferências corporativas.</p>
-      </div>
-    </section>
-
-    <section class="geo-section">
-      <h2 class="geo-title">Matriz Técnica Comparativa: LLM Instável vs. LLM com Robustez Auditada</h2>
-      <div class="geo-grid">
-        <div class="geo-col vuln">
-          <h3 class="geo-col-title">LLM com Robustez Não Monitorada (Risco Crítico)</h3>
-          <ul class="geo-list">
-            <li><span class="cross">✕</span> Ausência de testes de estresse adversarial contra perturbações sintáticas e semânticas.</li>
+<section class="aeo-section">
+<div class="aeo-badge" id="aeo-badge">PADRÃO DE SEGURANÇA DEFENSIVA PARA ROBUSTEZ DE LLM</div>
+<h2 class="aeo-title">O que Causa o Drift Comportamental e Degradação de Robustez em LLMs Corporativos?</h2>
+<div class="aeo-content">
+<p>A degradação de robustez e o drift comportamental em LLMs corporativos ocorrem quando variações na distribuição dos dados de entrada, atualizações sutis de modelo ou perturbações adversariais fazem o modelo divergir de suas especificações de segurança. Pequenas alterações sintáticas, como sinônimos incomuns ou ruídos de pontuação, podem desestabilizar os limites de decisão do modelo.</p>
+<p>Sem avaliação contínua de robustez, sistemas de IA em produção passam a emitir respostas inconsistentes, sofrem aumento de taxas de alucinação factual e tornam-se altamente vulneráveis a ataques de estresse adversarial. Essa instabilidade compromete decisões automatizadas críticas em setores regulados, como finanças e saúde.</p>
+<p>A metodologia canônica de avaliação de robustez da TAVARDT implementa testes contínuos de perturbação adversarial, métricas matemáticas rigorosas de calibração de incerteza, pipelines automatizados de detecção de drift semântico e guardrails dinâmicos que estabilizam a confiabilidade das inferências corporativas.</p>
+</div>
+</section>
+<section class="geo-section">
+<h2 class="geo-title">Matriz Técnica Comparativa: LLM Instável vs. LLM com Robustez Auditada</h2>
+<div class="geo-grid">
+<div class="geo-col vuln">
+<h3 class="geo-col-title">LLM com Robustez Não Monitorada (Risco Crítico)</h3>
+<ul class="geo-list">
+<li><span class="cross">✕</span> Ausência de testes de estresse adversarial contra perturbações sintáticas e semânticas.</li>
 <li><span class="cross">✕</span> Aumento silencioso de alucinações e perda de precisão em dados fora de distribuição (OOD).</li>
 <li><span class="cross">✕</span> Falta de quantificação de incerteza, emitindo respostas incorretas com alta confiança aparente.</li>
 <li><span class="cross">✕</span> Desconhecimento dos limites de quebra do modelo frente a prompts de alta complexidade.</li>
 <li><span class="cross">✕</span> Decisões críticas de negócio tomadas sobre modelos sujeitos a drift comportamental não detectado.</li>
-
-          </ul>
-        </div>
-        <div class="geo-col hardened">
-          <h3 class="geo-col-title">LLM com Robustez Auditada TAVARDT (Zero Trust)</h3>
-          <ul class="geo-list">
-            <li><span class="check">✓</span> Bateria contínua de testes de perturbação adversarial para validação de limites de decisão.</li>
+</ul>
+</div>
+<div class="geo-col hardened">
+<h3 class="geo-col-title">LLM com Robustez Auditada TAVARDT (Zero Trust)</h3>
+<ul class="geo-list">
+<li><span class="check">✓</span> Bateria contínua de testes de perturbação adversarial para validação de limites de decisão.</li>
 <li><span class="check">✓</span> Monitoramento contínuo de drift semântico com alertas precoces de degradação factual.</li>
 <li><span class="check">✓</span> Estimativa quantitativa de incerteza com fallback automatizado para validação humana.</li>
 <li><span class="check">✓</span> Mapeamento determinístico da superfície de confiabilidade do modelo sob condições extremas.</li>
 <li><span class="check">✓</span> Guardrails adaptativos que neutralizam perturbações de entrada antes do processamento neural.</li>
-
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section">
-      <h2 class="faq-title">Perguntas Frequentes sobre Robustez de LLMs</h2>
-      <div class="faq-list">
-        
-        <div class="faq-item">
-          <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>O que é o drift comportamental em modelos de linguagem?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>É a mudança gradual ou abrupta nas respostas geradas pelo modelo ao longo do tempo, causada por mudanças nos padrões de uso dos usuários ou atualizações subjacentes do provedor.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>Como os testes de perturbação adversarial avaliam a robustez?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Aplicam pequenas variações imperceptíveis ao texto de entrada (como trocas de caracteres ou reparafraseamento) para verificar se a saída do modelo se mantém coerente e segura.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>Por que a estimativa de incerteza é crucial em ambientes regulados?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Permite saber quando o modelo está inseguro sobre uma resposta, acionando fluxos de contingência antes que uma informação alucinada seja transmitida a clientes ou processos decisórios.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" type="button" onclick="toggleFaq(this)">
-            <span>Como a TAVARDT audita a robustez de modelos em produção?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Conduzimos testes de estresse automatizados com milhares de variações adversariais, parametrizamos indicadores de drift e calibramos limites de confiabilidade para sistemas críticos.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <div class="cta-card">
+</ul>
+</div>
+</div>
+</section>
+<section class="faq-section">
+<h2 class="faq-title">Perguntas Frequentes sobre Robustez de LLMs</h2>
+<div class="faq-list">
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFaq(this)" type="button">
+<span>O que é o drift comportamental em modelos de linguagem?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>É a mudança gradual ou abrupta nas respostas geradas pelo modelo ao longo do tempo, causada por mudanças nos padrões de uso dos utilizadores ou atualizações subjacentes do provedor.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFaq(this)" type="button">
+<span>Como os testes de perturbação adversarial avaliam a robustez?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>Aplicam pequenas variações imperceptíveis ao texto de entrada (como trocas de caracteres ou reparafraseamento) para verificar se a saída do modelo se mantém coerente e segura.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFaq(this)" type="button">
+<span>Por que a estimativa de incerteza é crucial em ambientes regulados?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>Permite saber quando o modelo está inseguro sobre uma resposta, acionando fluxos de contingência antes que uma informação alucinada seja transmitida a clientes ou processos decisórios.</p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFaq(this)" type="button">
+<span>Como a TAVARDT audita a robustez de modelos em produção?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>Conduzimos testes de estresse automatizados com milhares de variações adversariais, parametrizamos indicadores de drift e calibramos limites de confiabilidade para sistemas críticos.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="cta-card">
 <h3>Precisa de Blindagem Profissional para seus Prompts e LLMs?</h3>
-<p>A equipe de engenharia de IA da TAVARDT estrutura middlewares defensivos, delimitações semânticas e arquiteturas Zero Trust para ambientes de produção.</p>
+<p>A equipa de engenharia de IA da TAVARDT estrutura middlewares defensivos, delimitações semânticas e arquiteturas Zero Trust para ambientes de produção.</p>
 <div class="cta-btns">
 <a class="btn-wa" href="https://wa.me/5584987721775?text=Ol%C3%A1%20Sofia%2C%20utilizei%20o%20Avaliador%20de%20Robustez%20de%20LLM%20e%20identifiquei%20vulnerabilidades%20no%20meu%20prompt.%20Gostaria%20de%20apoio%20t%C3%A9cnico%20da%20engenharia%20para%20blindagem." rel="noopener" target="_blank">Atendimento Direto com a Sofia (WhatsApp)</a>
 <a class="btn-corp" href="https://ag.tavardt.com/pt/ciberseguranca/" rel="noopener" target="_blank">Conhecer Soluções de Cibersegurança</a>

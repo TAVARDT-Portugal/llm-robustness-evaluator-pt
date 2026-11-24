@@ -1,86 +1,58 @@
+# Avaliador de Robustez e Resiliência de Modelos LLM
 
-# Avaliador de Robustez de LLM & Testador de Guardrails
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-5b3cf5.svg)](https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Robustness](https://img.shields.io/badge/Benchmarking-Robustness-orange.svg)](https://ag.tavardt.com/pt/)
+[![NIST AI](https://img.shields.io/badge/NIST-AI%20RMF-blue.svg)](https://www.nist.gov/itl/ai-risk-management-framework)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-00ff88?style=flat-square&logo=github)](https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![OWASP LLM](https://img.shields.io/badge/OWASP-LLM01%2FLLM02-red?style=flat-square)](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-[![NIST AI RMF](https://img.shields.io/badge/NIST-AI%20RMF-blue?style=flat-square)](https://www.nist.gov/artificial-intelligence)
+**Framework de Testes de Stress, Verificação de Estabilidade e Análise de Consistência de Respostas em Modelos de Linguagem**
 
-**Auditoria Defensiva de Guardrails, Injeção de Prompt e Resiliência de Modelos de IA**
-
-Ferramenta interativa e CLI defensiva para programadores avaliarem a robustez dos guardrails de LLMs contra vetores de injeção, fuga de prompt e ataques estruturais. Pontuação de Resiliência 0-100 + blueprint defensivo.
-
-***
-
-## Visão Geral
-
-> **OWASP LLM01 & LLM02** | **NIST AI RMF** | **100% Defensive  -  Zero Offensive Payloads**
-
-## 5 Vetores de Teste Defensivos
-
-| # | Vector | Coverage |
-|-|-|-|
-| 1 | **Escape de Delimitador**  -  Detecta tokens de controle injetados (`</system>`, `[/INST]`, ` ``` `) | ✅ |
-| 2 | **Vazamento de System Prompt**  -  Identifica padrões de extração de instruções do sistema | ✅ |
-| 3 | **Substituição de Papel/Persona**  -  Verifica resistência a sobreposições (DAN, modo dev) | ✅ |
-| 4 | **Ofuscação Estrutural**  -  Avalia cobertura contra Base64, leetspeak, homóglifos Unicode | ✅ |
-| 5 | **Injeção Indireta de Contexto**  -  Simula documento RAG com payload embutido | ✅ |
+Desenvolvido e mantido pela divisão de auditoria e garantia de qualidade em IA da TAVARDT Portugal.
 
 ***
 
-## Ferramenta Online
+## Portais e Demonstração Online
 
-Acesse a ferramenta interativa diretamente:
+Aceda à ferramenta interativa oficial e aos canais soberanos da TAVARDT:
 
-🌐 **[https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/](https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/)**
+* **Aplicação Web Oficial no GitHub Pages**: [https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/](https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/)
+* **Portal Institucional**: [https://ag.tavardt.com/pt/](https://ag.tavardt.com/pt/)
+* **Central de Ferramentas**: [https://tools.tavardt.com/pt/](https://tools.tavardt.com/pt/)
 
 ***
 
-## Uso via CLI
+## Blueprints Técnicos e Recursos Disponíveis
 
-### Instalação
+1. **Aplicação Web Interativa**: Diagnóstico determinístico, cálculo de postura defensiva e recomendações imediatas no navegador.
+2. **Utilitário CLI Local**: Script Python determinístico executado diretamente no ambiente de produção para auditoria offline.
+3. **Especificações de Segurança**: Manifestos e configurações de hardening em conformidade com as normas internacionais.
+
+***
+
+## Uso do Utilitário CLI Determinístico
+
+Para executar a inspeção técnica no ambiente local:
 
 ```bash
 git clone https://github.com/TAVARDT-Portugal/llm-robustness-evaluator-pt.git
 cd llm-robustness-evaluator-pt
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-```
-
-### Execução
-
-```bash
-python llm_robustness_evaluator.py -prompt "You are a helpful assistant."
-```
-
-```
-Resilience Score: 85/100
-✅ V1 Delimiter Escape  -  PASS
-✅ V2 System Prompt Leakage  -  PASS
-✅ V3 Role/Persona Override  -  PASS
-✅ V4 Structural Obfuscation  -  PASS
-⚠️  V5 Indirect Context Injection  -  WARNING
+python3 scanner.py -json
 ```
 
 ***
 
-## Arquitetura Defensiva
+## Governança e Conformidade
 
-O blueprint defensivo inclui:
+* **Organização**: TAVARDT-Portugal
+* **Jurisdição**: Portugal
+* **Padrões de Referência**: Normas e frameworks técnicos auditados em estrita observância das regras de soberania.
 
-- 🐍 Filtro Python para detecção de padrões de injeção
-- 📦 Middleware TypeScript para APIs Next.js
-- 🔒 Template de System Prompt reforçado com delimitadores imutáveis
-
-***
-
+Desenvolvido pela Divisão de Cibersegurança e Infraestrutura da TAVARDT Portugal. Todos os direitos reservados.
 
 ***
 
-## Licença
-
-MIT License  -  uso livre para fins defensivos e educacionais.
-
-***
-
-© 2026 TAVARDT. Todos os direitos reservados.
+© 2026 TAVARDT Portugal. Todos os direitos reservados. Soberania e Defesa de Infraestrutura.

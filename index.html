@@ -14,19 +14,8 @@
 <title>Avaliador de Robustez de LLM &amp; Testador de Guardrails | TAVARDT Portugal</title>
 <meta content="Ferramenta interativa e CLI defensiva para programadores avaliarem a robustez dos guardrails de LLMs contra vetores de injeção, fuga de prompt e ataques estruturais. Pontuação de Resiliência 0-100 + blueprint defensivo." name="description"/>
 <link href="./favicon.ico" rel="icon" type="image/x-icon"/>
-
 <link href="https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/" rel="canonical"/>
-
 <link href="https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/" hreflang="pt-PT" rel="alternate"/>
-
-
-
-
-
-
-
-
-
 <link href="https://tavardt-usa.github.io/llm-robustness-evaluator-us/" hreflang="x-default" rel="alternate"/>
 <meta content="index, follow" name="robots"/>
 <meta content="website" property="og:type"/>
@@ -1338,7 +1327,7 @@ footer > div:first-child {
 <header class="tavardt-header">
 <div class="tavardt-header-inner">
 <a class="tavardt-brand" href="https://ag.tavardt.com/pt/" rel="noopener" target="_blank">
-<span class="tavardt-logo-text">TAVARDT<span class="tavardt-brand-dot">.</span></span>
+<span class="tavardt-logo-text">TAVARDT</span>
 </a>
 <nav class="tavardt-nav">
 <a class="tavardt-nav-link" href="https://ag.tavardt.com/pt/" rel="noopener" target="_blank">Portal</a>
@@ -1456,44 +1445,7 @@ footer > div:first-child {
 </section>
 <section class="faq-section">
 <h2 class="faq-title">Perguntas Frequentes sobre Robustez de LLMs</h2>
-<div class="faq-list">
-<div class="faq-item">
-<button class="faq-question" onclick="toggleFaq(this)" type="button">
-<span>O que é o drift comportamental em modelos de linguagem?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>É a mudança gradual ou abrupta nas respostas geradas pelo modelo ao longo do tempo, causada por mudanças nos padrões de uso dos utilizadores ou atualizações subjacentes do provedor.</p>
-</div>
-</div>
-<div class="faq-item">
-<button class="faq-question" onclick="toggleFaq(this)" type="button">
-<span>Como os testes de perturbação adversarial avaliam a robustez?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Aplicam pequenas variações imperceptíveis ao texto de entrada (como trocas de caracteres ou reparafraseamento) para verificar se a saída do modelo se mantém coerente e segura.</p>
-</div>
-</div>
-<div class="faq-item">
-<button class="faq-question" onclick="toggleFaq(this)" type="button">
-<span>Por que a estimativa de incerteza é crucial em ambientes regulados?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Permite saber quando o modelo está inseguro sobre uma resposta, acionando fluxos de contingência antes que uma informação alucinada seja transmitida a clientes ou processos decisórios.</p>
-</div>
-</div>
-<div class="faq-item">
-<button class="faq-question" onclick="toggleFaq(this)" type="button">
-<span>Como a TAVARDT audita a robustez de modelos em produção?</span>
-<span class="faq-icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Conduzimos testes de estresse automatizados com milhares de variações adversariais, parametrizamos indicadores de drift e calibramos limites de confiabilidade para sistemas críticos.</p>
-</div>
-</div>
-</div>
+<div class="faq-list"><div class="faq-item"><div class="faq-question">O que avalia o Avaliador de Robustez de LLMs?<span class="faq-toggle">+</span></div><div class="faq-answer">A ferramenta submete o system prompt a uma bateria rigorosa de padrões de ataque (injeção, jailbreak, colisão de delimitadores e extração de regras), gerando um índice de resiliência de 0 a 100.</div></div><div class="faq-item"><div class="faq-question">O que é injeção direta de prompt e por que ela é perigosa?<span class="faq-toggle">+</span></div><div class="faq-answer">É uma técnica onde o utilizador insere comandos que anulam as instruções originais do modelo, permitindo desvios de conduta, respostas prejudiciais e vazamento de regras de negócio.</div></div><div class="faq-item"><div class="faq-question">O teste envia meu system prompt para servidores externos?<span class="faq-toggle">+</span></div><div class="faq-answer">Não. Toda a avaliação e análise estática ocorrem localmente no navegador, sem retenção de dados, telemetria ou armazenamento em servidores.</div></div><div class="faq-item"><div class="faq-question">Como estruturar guardrails defensivos em Python ou TypeScript?<span class="faq-toggle">+</span></div><div class="faq-answer">Utilizando arquiteturas de middleware que validam a entrada antes do envio ao modelo, aplicam delimitadores XML/Markdown rígidos e filtram padrões adversariais.</div></div><div class="faq-item"><div class="faq-question">Como a TAVARDT audita e blinda sistemas baseados em LLMs em produção?<span class="faq-toggle">+</span></div><div class="faq-answer">A equipa de engenharia da TAVARDT desenha camadas defensivas completas: guardrails semânticos de baixa latência, sanitização com Cloudflare Workers e auditoria contínua de resiliência.</div></div></div>
 </section>
 <div class="cta-card">
 <h3>Precisa de Blindagem Profissional para seus Prompts e LLMs?</h3>
@@ -1507,7 +1459,7 @@ footer > div:first-child {
 <footer class="tavardt-footer">
 <div class="tavardt-footer-inner">
 <div class="tavardt-footer-col">
-<div class="tavardt-footer-logo">TAVARDT<span class="tavardt-brand-dot">.</span></div>
+<div class="tavardt-footer-logo">TAVARDT</div>
 <p class="tavardt-footer-mission">Transformamos negócios invisíveis em marcas reconhecidas e seguras no mercado digital.</p>
 </div>
 <div class="tavardt-footer-col">

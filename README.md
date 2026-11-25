@@ -2,8 +2,6 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-5b3cf5.svg)](https://tavardt-portugal.github.io/llm-robustness-evaluator-pt/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Robustness](https://img.shields.io/badge/Benchmarking-Robustness-orange.svg)](https://ag.tavardt.com/pt/)
-[![NIST AI](https://img.shields.io/badge/NIST-AI%20RMF-blue.svg)](https://www.nist.gov/itl/ai-risk-management-framework)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Framework de Testes de Stress, Verificação de Estabilidade e Análise de Consistência de Respostas em Modelos de Linguagem**
@@ -40,7 +38,7 @@ cd llm-robustness-evaluator-pt
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python3 scanner.py -json
+python3 llm_robustness_evaluator.py -p "System prompt"
 ```
 
 ***
@@ -50,6 +48,11 @@ python3 scanner.py -json
 * **Portal Corporativo:** https://ag.tavardt.com/pt/
 * **Suíte de Diagnósticos:** https://tools.tavardt.com/pt/
 * **Contacto Técnico:** https://ag.tavardt.com/pt/contacto/
+
+***
+
+### Licença
+Distribuído sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter detalhes completos.
 
 ***
 
